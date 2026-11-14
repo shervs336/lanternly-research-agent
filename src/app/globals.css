@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-night: #0a0f1c;
+  --color-night-2: #0f1628;
+  --color-night-3: #151d33;
+  --color-line: rgb(255 255 255 / 0.08);
+  --color-text: #e9ecf5;
+  --color-muted: #96a0bb;
+  --color-flame: #ffc861;
+  --color-flame-deep: #e8a23a;
+  --color-paper: #f8f4ea;
+  --color-paper-2: #f1ebdc;
+  --color-paper-line: #e3dac6;
+  --color-ink: #1c2131;
+  --color-ink-soft: #565d72;
+  --color-cite: #8a5a12;
+
+  --font-serif: var(--font-source-serif);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--color-night);
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color-scheme: dark;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+::selection { background: rgb(255 200 97 / 0.3); }
+
+/* Soft lantern glow behind the hero */
+.lantern-glow {
+  background:
+    radial-gradient(40rem 22rem at 50% -4rem, rgb(255 200 97 / 0.16), transparent 70%),
+    radial-gradient(60rem 30rem at 50% 120%, rgb(76 101 180 / 0.12), transparent 70%);
+}
+
+.paper {
+  background:
+    radial-gradient(120% 60% at 50% 0%, #fffaf0 0%, var(--color-paper) 60%),
+    var(--color-paper);
+  color: var(--color-ink);
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.04),
+    0 30px 80px -30px rgb(255 200 97 / 0.22),
+    0 20px 50px -20px rgb(0 0 0 / 0.6);
+}
+
+/* Report typography */
+.report { font-family: var(--font-serif), Georgia, serif; font-size: 1.075rem; line-height: 1.75; }
+.report h1 { font-size: clamp(1.7rem, 3.2vw, 2.25rem); line-height: 1.15; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 1rem; }
+.report h2 { font-size: 1.3rem; font-weight: 600; margin: 2rem 0 0.6rem; letter-spacing: -0.005em; }
+.report h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+.report p { margin: 0.75rem 0; }
+.report ul, .report ol { margin: 0.75rem 0; padding-left: 1.3rem; }
+.report ul { list-style: disc; }
+.report ol { list-style: decimal; }
+.report li { margin: 0.3rem 0; }
+.report li::marker { color: var(--color-flame-deep); }
+.report strong { font-weight: 650; }
+.report hr { border: 0; border-top: 1px solid var(--color-paper-line); margin: 1.75rem 0; }
+.report blockquote { border-left: 3px solid var(--color-paper-line); padding-left: 1rem; color: var(--color-ink-soft); font-style: italic; }
+.report table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-family: var(--font-sans); font-size: 0.9rem; }
+.report th, .report td { border-bottom: 1px solid var(--color-paper-line); padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+.report th { font-weight: 600; background: var(--color-paper-2); }
+.report a.ext { color: var(--color-cite); text-decoration: underline; text-underline-offset: 3px; }
+.report code { font-family: var(--font-mono); font-size: 0.85em; background: var(--color-paper-2); padding: 0.1em 0.35em; border-radius: 4px; }
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-line);
+  padding: 0.5rem 0.95rem;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  transition: border-color 0.15s, background-color 0.15s;
+}
+.btn-ghost:hover { border-color: rgb(255 200 97 / 0.4); background: rgb(255 255 255 / 0.03); }
+.btn-ghost:focus-visible { outline: 2px solid var(--color-flame); outline-offset: 2px; }
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-paper-line);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  transition: background-color 0.15s;
+}
+.action:hover { background: var(--color-paper-2); }
+.action:focus-visible { outline: 2px solid var(--color-cite); outline-offset: 2px; }
+
+/* Blinking caret while the report streams */
+.caret::after {
+  content: "";
+  display: inline-block;
+  width: 0.5ch;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: -0.15em;
+  background: var(--color-flame-deep);
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink { to { visibility: hidden; } }
+
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  45% { opacity: 0.86; }
+  55% { opacity: 0.95; }
+}
+.flicker { animation: flicker 3.2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+/* Print / Save as PDF: just the report on white */
+@media print {
+  html, body { background: #fff !important; color: #000 !important; }
+  .no-print { display: none !important; }
+  .paper { box-shadow: none !important; background: #fff !important; padding: 0 !important; }
+  .report { font-size: 11pt; }
+  a { color: #000 !important; }
 }

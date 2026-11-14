@@ -1,0 +1,200 @@
+{
+  "slug": "what-s-the-evidence-on-intermittent-fasting-for-weight-loss",
+  "question": "What's the evidence on intermittent fasting for weight loss?",
+  "recordedAt": "2026-11-14T13:07:05.752Z",
+  "message": {
+    "id": "",
+    "metadata": {
+      "reportId": "3a18dd24-3102-4ae1-a2ce-d592edb83a17",
+      "model": "gemini-3.5-flash-lite"
+    },
+    "role": "assistant",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "tool-plan",
+        "toolCallId": "call_4338495554576794447",
+        "state": "output-available",
+        "input": {
+          "steps": [
+            "Search for recent systematic reviews or clinical trials on intermittent fasting for weight loss",
+            "Search for comparison between intermittent fasting and continuous calorie restriction",
+            "Read key medical studies or health organization findings on intermittent fasting"
+          ]
+        },
+        "output": {
+          "steps": [
+            "Search for recent systematic reviews or clinical trials on intermittent fasting for weight loss",
+            "Search for comparison between intermittent fasting and continuous calorie restriction",
+            "Read key medical studies or health organization findings on intermittent fasting"
+          ]
+        },
+        "callProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0T33LvbFQHYXK2nRpcqPSI+C+f79hbkIlK1kM4K/cP/0OWAU3y+e5JDLWmHnG9btdHAewPO+1IIQHxmKJ8Iwut3sjXh65HMcY/D0dJP1cUibHNVfTqJY3RKj0="
+          }
+        },
+        "resultProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0T33LvbFQHYXK2nRpcqPSI+C+f79hbkIlK1kM4K/cP/0OWAU3y+e5JDLWmHnG9btdHAewPO+1IIQHxmKJ8Iwut3sjXh65HMcY/D0dJP1cUibHNVfTqJY3RKj0="
+          }
+        }
+      },
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "tool-search",
+        "toolCallId": "call_1085670881640956378",
+        "state": "output-available",
+        "input": {
+          "query": "intermittent fasting weight loss systematic review clinical trial"
+        },
+        "output": {
+          "query": "intermittent fasting weight loss systematic review clinical trial",
+          "results": [
+            {
+              "id": 1,
+              "title": "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12175170",
+              "snippet": "to −0.59), moderate certainty of evidence). Additionally, alternate day fasting showed a trivial reduction in body weight compared with both time restricted eating and whole day fasting (mean difference −1.69 kg (−2.49 to −0.88) and −1.05 kg (−1.90 to −0.19), respectively, both with moderate certainty of evidence). Estimates were similar among trials with less than 24 weeks follow-up (n=76); howev"
+            },
+            {
+              "id": 2,
+              "title": "Intermittent fasting may be effective for weight loss, cardiometabolic health | Harvard T.H. Chan School of Public Health",
+              "url": "https://hsph.harvard.edu/news/intermittent-fasting-may-be-effective-for-weight-loss-cardiometabolic-health",
+              "snippet": "The study represents the largest systematic review on intermittent fasting, analyzing 99 clinical trials across more than 6,500 participants. Researchers found that for weight loss, intermittent fasting and traditional calorie-restricted diets were on par and were more effective than restriction-free diets. However, alternate day fasting demonstrated superior results, resulting in 1.3 kilograms gr"
+            },
+            {
+              "id": 3,
+              "title": "Evidence behind intermittent fasting for weight loss fails to match hype | Cochrane",
+              "url": "https://www.cochrane.org/about-us/news/evidence-behind-intermittent-fasting-weight-loss-fails-match-hype",
+              "snippet": "The review compared intermittent fasting with traditional dietary advice and with no intervention. Intermittent fasting did not appear to have a clinically meaningful effect on weight loss compared to standard dietary advice or doing nothing.   \n  \nReporting of side effects was inconsistent across trials, making it difficult to draw firm conclusions. The evidence base remains limited, with only 22"
+            },
+            {
+              "id": 4,
+              "title": "Intermittent fasting and weight loss",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7021351",
+              "snippet": "### Synthesis\n\nAll 27 IF trials found weight loss of 0.8% to 13.0% of baseline weight with no serious adverse events. Twelve studies comparing IF to calorie restriction found equivalent results. The 5 studies that included patients with type 2 diabetes documented improved glycemic control.\n\n### Conclusion [...] Forty-one articles describing 27 trials addressed weight loss in overweight and obese p"
+            },
+            {
+              "id": 5,
+              "title": "Intermittent fasting and health outcomes: an umbrella review of ...",
+              "url": "https://www.thelancet.com/journals/eclinm/article/PIIS2589-53702400098-1/fulltext",
+              "snippet": "Our findings suggest that IF may have beneficial effects on a range of health outcomes for adults with overweight or obesity, compared to CER or"
+            }
+          ]
+        },
+        "callProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TfTa+CdeEpXt4dXLX/PfbbSxWHidUL6Dec6JWFWqhBQL+Q/gWbPOtsgMlg17SGXuicVpYquvOZggCVikDDC8cuHmtRHwkn7XqGALs6jA08eX2MsJf9lMo5XQ="
+          }
+        },
+        "resultProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TfTa+CdeEpXt4dXLX/PfbbSxWHidUL6Dec6JWFWqhBQL+Q/gWbPOtsgMlg17SGXuicVpYquvOZggCVikDDC8cuHmtRHwkn7XqGALs6jA08eX2MsJf9lMo5XQ="
+          }
+        }
+      },
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "tool-search",
+        "toolCallId": "call_16731973608973675533",
+        "state": "output-available",
+        "input": {
+          "query": "nejm intermittent fasting calorie restriction weight loss trial"
+        },
+        "output": {
+          "query": "nejm intermittent fasting calorie restriction weight loss trial",
+          "results": [
+            {
+              "id": 6,
+              "title": "Intermittent Fasting or Daily Caloric Restriction... : NEJM Journal Watch",
+              "url": "https://journals.lww.com/02273933-202500000-00256",
+              "snippet": "Button group.\n\nRestricted: General Medicine: Ambulatory Medicine: Informing Practice: Summary: 1011\n\n# Intermittent Fasting or Daily Caloric Restriction for Weight Loss?\n\n David S. Weisman\n\nNEJM Journal Watch :p NA58641, 2025. | DOI: 10.1056/nejm-jw.NA58641\n\nIn a small trial, a 4:3 intermittent-fasting diet resulted in significantly more weight loss than did daily calorie restriction.\n\nCopyright ©"
+            },
+            {
+              "id": 7,
+              "title": "Time-Restricted Eating in Weight Loss | NEJM",
+              "url": "https://www.youtube.com/watch?v=b-HIJu4IdFc",
+              "snippet": "### Transcript\n[0:07] daily calorie restriction is a primary weight loss strategy for patients with obesity but most diet trials have demonstrated only modest weight loss\n[0:15] after a year and maintaining weight loss is challenging several pilot studies have reported promising results for time-restricted\n[0:22] eating a form of intermittent fasting involving a shortened daily eating period but d"
+            },
+            {
+              "id": 8,
+              "title": "How Effective Is Intermittent Fasting for Weight Loss? | NEJM Clinician",
+              "url": "https://clinician.nejm.org/effective-intermittent-fasting-weight-loss-nejm-jw.NA58915",
+              "snippet": "Various types of intermittent fasting have gained popularity as approaches to weight loss and cardiovascular risk reduction, but their effects remain unclear. In a network meta-analysis, researchers pooled data from 99 randomized, controlled trials (6600 patients, most with overweight or obesity and other metabolic comorbidities) to compare effects of various intermittent fasting programs, more-tr"
+            },
+            {
+              "id": 9,
+              "title": "Intermittent Fasting As Effective As Calorie-Counting for Weight Loss - Business Insider",
+              "url": "https://www.businessinsider.com/intermittent-fasting-calorie-counting-best-weight-loss-diet-maintenance-2023-6",
+              "snippet": "The randomized controlled trial, published in the Annals of Internal Medicine, assessed 77 individuals with obesity from diverse backgrounds. One third were asked to intermittent fast, one third counted calories, and the final third (the control group) made no changes to their diets. The fasting and calorie restriction groups also regularly met with a dietitian over the year-long experiment. [...]"
+            },
+            {
+              "id": 10,
+              "title": "Intermittent fasting vs. calorie counting for weight loss: many of the benefits are similar",
+              "url": "https://finance.yahoo.com/news/intermittent-fasting-vs-calorie-counting-210000280.html",
+              "snippet": "The study, which included 90 racially diverse adults with obesity from the Greater Chicago area, randomly assigned participants into one of three groups:\n\n1. Eight-hour time-restricted eating, wherein participants could eat only between noon to 8 p.m., without calorie counting\n2. Calorie restriction, wherein participants reduced 25% of their calories daily\n3. No change in their calorie consumption"
+            }
+          ]
+        },
+        "callProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TVjcooHxPR4qzHe1JmQm14t5jaKpJ4zkkBprt8lDd+02ExY7kINWPrmRwyd4KZujL/FQ8TY++wtt6DBMXWstVcr6CqVLYlJUB6sCUAhbEb4Om5/R7vtM830k="
+          }
+        },
+        "resultProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TVjcooHxPR4qzHe1JmQm14t5jaKpJ4zkkBprt8lDd+02ExY7kINWPrmRwyd4KZujL/FQ8TY++wtt6DBMXWstVcr6CqVLYlJUB6sCUAhbEb4Om5/R7vtM830k="
+          }
+        }
+      },
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "tool-read",
+        "toolCallId": "call_13435927311355330031",
+        "state": "output-available",
+        "input": {
+          "id": 2
+        },
+        "output": {
+          "id": 2,
+          "title": "Intermittent fasting may be effective for weight loss, cardiometabolic health | Harvard T.H. Chan School of Public Health",
+          "url": "https://hsph.harvard.edu/news/intermittent-fasting-may-be-effective-for-weight-loss-cardiometabolic-health",
+          "chars": 13602,
+          "content": "Title: Intermittent fasting may be effective for weight loss, cardiometabolic health | Harvard T.H. Chan School of\n\nURL Source: https://hsph.harvard.edu/news/intermittent-fasting-may-be-effective-for-weight-loss-cardiometabolic-health\n\nFinal URL: https://hsph.harvard.edu/news/intermittent-fasting-may-be-effective-for-weight-loss-cardiometabolic-health/\n\nPublished Time: 2025-06-23T12:15:48-04:00\n\nMarkdown Content:\n[Skip to main content](https://hsph.harvard.edu/news/intermittent-fasting-may-be-effective-for-weight-loss-cardiometabolic-health/#main)\n\n[Health for all starts here.](https://community.alumni.harvard.edu/give/16038344?appealcode=PW01)\n\nMake your [year-end gift](https://community.alumni.harvard.edu/give/16038344?appealcode=PW01) by December 31\n\nClose alert\n\n Search Harvard Chan:  Search Search Close search bar \n\n[Giving](https://hsph.harvard.edu/alumni-friends/support-harvard-chan-school/)\n\n[Harvard T.H. Chan School of Public Health](https://hsph.harvard.edu/)\n\n*   [Degrees & Programs](https://hsph.harvard.edu/degrees-and-programs/)\n*   [Admissions](https://hsph.harvard.edu/admissions/)\n*   [Faculty & Research](https://hsph.harvard.edu/faculty-and-research/)\n\nOpen Search Bar Open Primary Navigation\n\n*   Degrees & Programs\n    *   [Degrees & Programs](https://hsph.harvard.edu/degrees-and-programs/)\n    *   [Degree Program Finder](https://hsph.harvard.edu/program-finder/)\n        *   [Master’s Degrees](https://hsph.harvard.edu/program-finder/?pf_degree_type=masters-degrees)\n        *   [Doctoral Degrees](https://hsph.harvard.edu/program-finder/?pf_degree_type=doctoral-degrees)\n        *   [Joint and Combined Degrees](https://hsph.harvard.edu/program-finder/?pf_degree_type=joint-and-combined-degrees)\n        *   [Interdisciplinary Concentrations](https://hsph.harvard.edu/degrees-and-programs/concentrations/)\n\n    *   [Advanced Learning Academy](https://hsph.harvard.edu/advanced-learning-academy/)\n    *   [Fellowships and Special Programs](https://hsph.harvard.edu/degrees-and-programs/fellowships-special-programs/)\n    *   [Undergraduate and High School Programs](https://hsph.harvard.edu/degrees-and-programs/undergraduate-and-high-school-programs/)\n\n*   Admissions\n    *   [Admissions](https://hsph.harvard.edu/admissions/)\n    *   [Applying to a Degree Program](https://hsph.harvard.edu/admissions/applying-to-a-degree-program/)\n    *   [Tuition and Financial Aid](https://hsph.harvard.edu/tuition-and-financial-aid/)\n    *   [Why Harvard Chan?](https://hsph.harvard.edu/admissions/why-harvard-chan/)\n    *   [Upcoming Admissions Events and Webinars](https://hsph.harvard.edu/admissions/admissions-events-and-webinars/)\n    *   [Policies and Disclosures](https://hsph.harvard.edu/tuition-and-financial-aid/policies-and-disclosures/)\n\n*   Faculty & Research\n    *   [Faculty & Research](https://hsph.harvard.edu/faculty-and-research/)\n    *   [Faculty and Researcher Profiles](https://hsph.harvard.edu/profiles/)\n    *   [Academic Departments](https://hsph.harvard.edu/departments/)\n    *   [Research Centers, Institutes, and Labs](https://hsph.harvard.edu/research-centers-institutes-and-labs/)\n    *   [Resources for Researchers](https://hsph.harvard.edu/resources-for-researchers/)\n\n*   News & Events\n    *   [News](https://hsph.harvard.edu/news/)\n        *   [Newsletters](https://hsph.harvard.edu/newsletters/)\n        *   [For the Media](https://hsph.harvard.edu/for-the-media/)\n\n    *   [Events](https://hsph.harvard.edu/events/)\n    *   [Topics](https://hsph.harvard.edu/topics/)\n    *   [The Studio](https://hsph.harvard.edu/studio/)\n\n*   Student Life\n    *   [Student Life](https://hsph.harvard.edu/student-life/)\n    *   [Student Resources](https://hsph.harvard.edu/student-life/student-resources/)\n    *   [Career Development](https://hsph.harvard.edu/student-life/career-development/)\n    *   [Life in Boston](https://hsph.harvard.edu/student-life/life-in-boston/)\n    *   [Housing](https://hsph.harvard.edu/student-life/housing/)\n    *   [Teaching and Mentoring](https://hsph.harvard.edu/student-life/teaching-and-mentoring/)\n    *   [Beyond the Classroom](https://hsph.harvard.edu/student-life/beyond-the-classroom/)\n    *   [International Student Experience](https://hsph.harvard.edu/student-life/international-student-experience/)\n    *   [Graduation](https://hsph.harvard.edu/graduation/)\n    *   [Orientation](https://hsph.harvard.edu/orientation/)\n\n*   Alumni & Friends\n    *   [Alumni & Friends](https://hsph.harvard.edu/alumni-friends/)\n    *   [Get Involved](https://hsph.harvard.edu/alumni-friends/get-involved/)\n    *   [Impact](https://hsph.harvard.edu/alumni-friends/impact/)\n    *   [Events](https://hsph.harvard.edu/alumni-friends/events/)\n    *   [Alumni Home](https://hsph.harvard.edu/alumni-friends/alumni-home/)\n    *   [Support Harvard Chan School](https://hsph.harvard.edu/alumni-friends/support-harvard-chan-school/)\n\n*   Who We Are\n    *   [Mission and Vision](https://hsph.harvard.edu/mission-and-vision/)\n        *   [The Harvard Chan Principles of Citizenship](https://hsph.harvard.edu/the-harvard-chan-principles-of-citizenship/)\n\n    *   [Research Impact](https://hsph.harvard.edu/research-impact/)\n    *   [Open Inquiry and Constructive Engagement](https://hsph.harvard.edu/open-inquiry/)\n    *   [Leadership](https://hsph.harvard.edu/office/dean/)\n    *   [Location and Facilities](https://hsph.harvard.edu/location-and-facilities/)\n    *   [Facts and Figures](https://hsph.harvard.edu/facts-and-figures/)\n    *   [History](https://hsph.harvard.edu/history/)\n    *   [Contact](https://hsph.harvard.edu/contact/)\n\n[Home](https://hsph.harvard.edu/ \"Go to Harvard T.H. Chan School of Public Health.\") / [News](https://hsph.harvard.edu/news/ \"Go to News.\") / Intermittent fasting may be effective for weight loss, cardiometabolic health\n\n[Food, Nutrition, Diet](https://hsph.harvard.edu/topic/food-nutrition-diet/)\n\n# Intermittent fasting may be effective for weight loss, cardiometabolic health\n\nBy\n\nMaya Brownstein\n"
+        },
+        "callProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TBDiKqA4azz/9hrb/gHDSPZ9lFzoQQ4capma2S+Fc/MIWJaS9cc/IDnOdn2YHmPNYse+TxinoFH6kVD3kbRKec/31MUX+bck06pzynz27u6iZnZWY1Zrcv0U="
+          }
+        },
+        "resultProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TBDiKqA4azz/9hrb/gHDSPZ9lFzoQQ4capma2S+Fc/MIWJaS9cc/IDnOdn2YHmPNYse+TxinoFH6kVD3kbRKec/31MUX+bck06pzynz27u6iZnZWY1Zrcv0U="
+          }
+        }
+      },
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "# What's the evidence on intermittent fasting for weight loss?\n\n**Answer:** \nThe evidence indicates that intermittent fasting (IF) is an effective tool for weight loss, performing roughly on par with traditional continuous calorie-restriction diets [2][4]. Rather than operating through a unique metabolic magic, IF achieves weight loss primarily by restricting overall caloric intake through designated eating windows or alternate-day fasting protocols [2][10]. While large-scale reviews confirm its safety and efficacy for overweight and obese adults [1], some individual trials note that adherence and long-term weight outcomes are comparable to standard calorie-counting approaches [9].\n\n## Intermittent Fasting vs. Continuous Calorie Restriction\n* **Equivalence in outcomes:** Multiple randomized clinical trials and comprehensive systematic reviews—including large network meta-analyses involving thousands of participants—demonstrate that intermittent fasting and traditional daily calorie restriction yield similar amounts of weight loss [2][4]. \n* **Mechanistic simplicity:** Time-restricted eating (such as an 8-hour feeding window) often helps participants naturally reduce caloric intake without the burden of meticulously tracking every calorie [10]. \n* **Protocol variations:** While standard time-restricted eating and whole-day fasting produce comparable weight reduction, certain regimens like alternate-day fasting have shown slightly greater short-term weight loss in specific pooled analyses [1][2].\n\n## Cardiometabolic Health and Secondary Benefits\n* **Glycemic control:** Studies tracking participants with overweight, obesity, or type 2 diabetes frequently report improvements in metabolic markers, including better glycemic control and reduced insulin resistance [4][8].\n* **Cardiometabolic risk factors:** Beyond weight loss, IF regimens have been associated with modest improvements in blood pressure, lipid profiles, and systemic inflammation markers [1][8].\n* **Safety profile:** Clinical trials report that intermittent fasting is generally safe over short-to-medium-term follow-ups, with no serious adverse events uniquely attributable to the fasting protocols [4].\n\n## What's uncertain\n* **Long-term sustainability:** Most randomized controlled trials have relatively short follow-up periods (frequently under 6 to 12 months), leaving long-term weight maintenance uncertain [3][7].\n* **Adherence challenges:** Drop-out rates and inconsistent reporting of side effects vary across studies, making it difficult to determine which specific sub-population finds IF easiest to maintain over years [3].\n* **Superiority debates:** While large meta-analyses show IF is effective compared to doing nothing or eating freely, some independent reviews (such as Cochrane analyses) suggest the net benefit over standard dietary counseling may sometimes be modest or heavily dependent on baseline behaviors [3].",
+        "providerMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TZZGVor2DreFmgEy4TrRkInkKW835S82i/BuRIFO2ngRwT92e2iQohX1xEeyvdTRsx05GeER2EwJCGXR/Yv+dS1cRsPI1Fkop/Prmd2WezFF0uQlfaJ+31Qg="
+          }
+        },
+        "state": "done"
+      }
+    ]
+  }
+}

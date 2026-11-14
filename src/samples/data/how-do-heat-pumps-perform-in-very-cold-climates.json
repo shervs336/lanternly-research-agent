@@ -1,0 +1,202 @@
+{
+  "slug": "how-do-heat-pumps-perform-in-very-cold-climates",
+  "question": "How do heat pumps perform in very cold climates?",
+  "recordedAt": "2026-11-14T13:05:43.762Z",
+  "message": {
+    "id": "",
+    "metadata": {
+      "reportId": "19458667-de93-447a-8b3c-bceb1ca89623",
+      "model": "gemini-3.5-flash-lite"
+    },
+    "role": "assistant",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "tool-plan",
+        "toolCallId": "call_7668057167384675892",
+        "state": "output-available",
+        "input": {
+          "steps": [
+            "Search cold climate heat pump performance efficiency studies",
+            "Search cold weather heat pump operating limits and technology advances",
+            "Read technical articles or reports on cold climate heat pump effectiveness"
+          ]
+        },
+        "output": {
+          "steps": [
+            "Search cold climate heat pump performance efficiency studies",
+            "Search cold weather heat pump operating limits and technology advances",
+            "Read technical articles or reports on cold climate heat pump effectiveness"
+          ]
+        },
+        "callProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TyIh03vJ8eey+RWLjDIT9DKU2bSdoLlbyEe+BEaHtxrRXebE3uPvSuevqqmvQyb+IUjPXfSt/j70HcV9KTCj3vUPsbjxGJmoUb8w4N33Ktgg7f2eXYQrZIco="
+          }
+        },
+        "resultProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TyIh03vJ8eey+RWLjDIT9DKU2bSdoLlbyEe+BEaHtxrRXebE3uPvSuevqqmvQyb+IUjPXfSt/j70HcV9KTCj3vUPsbjxGJmoUb8w4N33Ktgg7f2eXYQrZIco="
+          }
+        }
+      },
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "tool-search",
+        "toolCallId": "call_4533818409457288203",
+        "state": "output-available",
+        "input": {
+          "query": "cold climate heat pump performance efficiency subzero temperatures"
+        },
+        "output": {
+          "query": "cold climate heat pump performance efficiency subzero temperatures",
+          "results": [
+            {
+              "id": 1,
+              "title": "Cold Climate Heat Pump | Heating in Extreme Cold Weather | Carrier",
+              "url": "https://www.carrier.com/residential/en/ca/products/heat-pumps/cold-climate-heat-pump",
+              "snippet": "Cold climate heat pump technology allows for heat pump installation in all regions and provides warm, energy-efficient heating even when it’s below freezing outside with some Carrier models operating down to -22° F\n Higher energy efficiency – up to 22.0 SEER2 during cooling and up to 10.5 HSPF2 during heating with properly matched equipment\n Consistent temperature in the home for greater comfort w"
+            },
+            {
+              "id": 2,
+              "title": "Heat pumps in subzero temperatures - GreenBuildingAdvisor",
+              "url": "https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps",
+              "snippet": "Most cold climate heat pumps are still delivering a COP greater than 1.5 at max speed at -25C/-13F, and though not explicitly tested & rated at -20F are almost certainly still better than 1.5 @ -20C.\n\n   If your heat pumps are listed in the NEEP spreadsheet it will specify capacity and efficiency at the lowest specified/tested outdoor temperature at both it's minimum and maximum speeds:\n\n   \n\n   ("
+            },
+            {
+              "id": 3,
+              "title": "Cold Climate Heat Pumps (CCHPs) - Trane®",
+              "url": "https://www.trane.com/residential/en/resources/glossary/cold-climate-heat-pump",
+              "snippet": "“Today’s cold climate heat pumps are engineered to perform reliably in much lower temperatures than traditional systems. Advanced inverter technology allows them to maintain meaningful heating capacity even in single-digit or subzero conditions, giving homeowners in northern climates an efficient alternative to fossil fuel heating.”\n\n– Chelsea Hudson, Product Manager, Heat Pumps and System Ratings"
+            },
+            {
+              "id": 4,
+              "title": "Cold Climate Heat Pumps | JADE Learning",
+              "url": "https://www.jadelearning.com/blog/cold-climate-heat-pumps",
+              "snippet": "When the temperature of the outdoor air nears 32°F (0°C), water vapor in the air begins to freeze on the outdoor coil, resulting in a dramatic decrease in air flow across the coil. The unit must then defrost the coil to continue to provide heat transfer.\n\nNewer technology has improved the performance of the air-source units, with some manufacturers now producing equipment that will perform into th"
+            },
+            {
+              "id": 5,
+              "title": "Heat Pump Efficiency in Sub-Zero Weather: What Minnesota Homeowners Need to Know — Air Comfort Heating & Air Conditioning",
+              "url": "https://www.aircomfortmn.com/blog/heat-pump-efficiency-in-sub-zero-weather-what-minnesota-homeowners-need-to-know",
+              "snippet": "Reduced efficiency: The colder the air, the harder it is to extract heat, which can decrease the system’s efficiency.\n Increased reliance on backup heating: Many heat pumps have auxiliary heating (such as electric resistance heating) that activates during extreme cold, which can increase energy usage.\n Longer run times: To maintain indoor comfort, the system may need to run longer, which can wear "
+            }
+          ]
+        },
+        "callProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TB4KrVP+2gv6nsK5oNt+pp1b0n9jrOcUdRAinIOJUGb2A3y7cfxYYRbAJvK0gex64YOXrM8uwiQyNR2ytlMy4iBZXDC8c1Apr1ZT7we8C8HseDoPONhgHEZQ="
+          }
+        },
+        "resultProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0TB4KrVP+2gv6nsK5oNt+pp1b0n9jrOcUdRAinIOJUGb2A3y7cfxYYRbAJvK0gex64YOXrM8uwiQyNR2ytlMy4iBZXDC8c1Apr1ZT7we8C8HseDoPONhgHEZQ="
+          }
+        }
+      },
+      {
+        "type": "tool-search",
+        "toolCallId": "call_4533818409457288130",
+        "state": "output-available",
+        "input": {
+          "query": "how well do heat pumps work in very cold weather department of energy"
+        },
+        "output": {
+          "query": "how well do heat pumps work in very cold weather department of energy",
+          "results": [
+            {
+              "id": 6,
+              "title": "Heat Pumps in Cold Climates: Winter Performance Guide 2026",
+              "url": "https://a1solarstore.com/blog/heat-pumps-in-cold-climates-breaking-the-ice-on-winter-performance.html",
+              "snippet": "According to the Department of Energy's Cold Climate Heat Pump Challenge, modern cold-climate heat pumps operate efficiently even at -15°F, maintaining 70%+ capacity while delivering 200-350% efficiency (COP 2.0-3.5). This scientific validation establishes that cold-climate heat pumps are fundamentally different from older technology. [...] Real-world testing proves their effectiveness. The Depart"
+            },
+            {
+              "id": 7,
+              "title": "Weather in national",
+              "url": "https://www.weatherapi.com/",
+              "snippet": "{'location': {'name': 'National City', 'region': 'California', 'country': 'United States of America', 'lat': 32.6781, 'lon': -117.0983, 'tz_id': 'America/Los_Angeles', 'localtime_epoch': 1794661529, 'localtime': '2026-11-14 05:05'}, 'current': {'last_updated_epoch': 1794661200, 'last_updated': '2026-11-14 05:00', 'temp_c': 17.0, 'temp_f': 62.7, 'is_day': 0, 'condition': {'text': 'Light rain shower"
+            },
+            {
+              "id": 8,
+              "title": "Do Heat Pumps Work In Cold Climates? | EnergySage",
+              "url": "https://www.energysage.com/heat-pumps/heat-pumps-cold-climates",
+              "snippet": "Once dismissed as a warm-weather technology, today’s cold-climate heat pumps are built to thrive in even the harshest winters. Studies from the DOE, NLR (formerly NREL), and Efficiency Maine all show that these systems deliver reliable comfort and meaningful savings—even at subzero temperatures. While upfront costs remain a hurdle, incentives and long-term efficiency gains make them a strong inves"
+            },
+            {
+              "id": 9,
+              "title": "Commercial heat pumps will benefit from tech developed for cold climate challenge, manufacturers say",
+              "url": "https://finance.yahoo.com/news/commercial-heat-pumps-benefit-tech-104657885.html",
+              "snippet": "### Dive Insight:\n\nWith heating and cooling buildings contributing 40% to U.S. greenhouse gas emissions, next-generation cold climate heat pumps are a vital technology that can potentially slash emissions and reduce utility bills, DOE said. The department estimated that rooftop heat pump units for commercial buildings can cut energy costs and GHG emissions by up to 50%, compared with conventional "
+            },
+            {
+              "id": 10,
+              "title": "DOE to Partner with Heating Industry to Improve Performance and Energy-Efficiency of Cold Climate Heat Pumps | Department of Energy",
+              "url": "https://www.energy.gov/articles/doe-partner-heating-industry-improve-performance-and-energy-efficiency-cold-climate-heat",
+              "snippet": "“Cold climate heat pumps are a win-win for American families to comfortably heat their homes and businesses while significantly cutting down carbon pollution and lowering their energy costs,” said Secretary of Energy Jennifer M. Granholm. “DOE’s Cold Climate Heat Pump Challenge will mobilize the heating industry to accelerate a safer, cleaner, and greener method for heating American homes and keep"
+            }
+          ]
+        }
+      },
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "tool-read",
+        "toolCallId": "call_2198133739293606188",
+        "state": "output-available",
+        "input": {
+          "id": 6
+        },
+        "output": {
+          "id": 6,
+          "title": "Heat Pumps in Cold Climates: Winter Performance Guide 2026",
+          "url": "https://a1solarstore.com/blog/heat-pumps-in-cold-climates-breaking-the-ice-on-winter-performance.html",
+          "chars": 129080,
+          "content": "Title: Heat Pumps in Cold Climates: Winter Performance Guide 2026\n\nURL Source: https://a1solarstore.com/blog/heat-pumps-in-cold-climates-breaking-the-ice-on-winter-performance.html\n\nPublished Time: 2025-10-02T00:00:00-05:00\n\nMarkdown Content:\n\n**Blackouts are no longer rare.** Here’s what every homeowner should know. [**Read full article**](https://a1solarstore.com/blog/global-blackout-will-your-solar-panels-save-you-when-the-lights-go-out.html).\n\nBlackouts are coming   \nAre you ready?\n\n[](https://a1solarstore.com/)\n*   [Store](https://a1solarstore.com/)\n    *   [**Clearance**](https://a1solarstore.com/clearance-solar-panels.html)\n\nWattage\n\n        *   [355 watt](https://a1solarstore.com/solar-panels/355-watt-solar-panels.html#clearance)\n        *   [385 watt](https://a1solarstore.com/solar-panels/385-watt-solar-panels.html#clearance)\n        *   [400 watt](https://a1solarstore.com/solar-panels/400-watt-solar-panels.html#clearance)\n        *   [405 watt](https://a1solarstore.com/solar-panels/405-watt-solar-panels.html#clearance)\n        *   [410 watt](https://a1solarstore.com/solar-panels/410-watt-solar-panels.html#clearance)\n        *   [415 watt](https://a1solarstore.com/solar-panels/415-watt-solar-panels.html#clearance)\n        *   [440 watt](https://a1solarstore.com/solar-panels/440-watt-solar-panels.html#clearance)\n        *   [445 watt](https://a1solarstore.com/solar-panels/445-watt-solar-panels.html#clearance)\n        *   [450 watt](https://a1solarstore.com/solar-panels/450-watt-solar-panels.html#clearance)\n        *   [460 watt](https://a1solarstore.com/solar-panels/460-watt-solar-panels.html#clearance)\n        *   [500 watt](https://a1solarstore.com/solar-panels/500-watt-solar-panels.html#clearance)\n        *   [540 watt](https://a1solarstore.com/solar-panels/540-watt-solar-panels.html#clearance)\n        *   [580 watt](https://a1solarstore.com/solar-panels/580-watt-solar-panels.html#clearance)\n\nBrand\n\n        *   [](https://a1solarstore.com/solar-panels/canadian-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/ja-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/hyundai-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/longi-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/phono-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/solarspace-power-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/trina-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/solarever-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/philadelphia-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/peimar-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/aptos-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/seraphim-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/jinko-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/hyperion-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/meyer-burger-solar-panels.html#clearance)\n        *   [](https://a1solarstore.com/solar-panels/solar4america-solar-panels.html#clearance)\n\n[See all panels](https://a1solarstore.com/clearance-solar-panels.html)\n\n[$150 – $200](https://a1solarstore.com/solar-panels.html?features_hash=1-150-200-USD#clearance)\n\n[$200 – $250](https://a1solarstore.com/solar-panels.html?features_hash=1-200-250-USD#clearance)\n\n[ **Need services for your solar panels?**Get offers from trusted home service pros](https://a1solarstore.com/services/solar/)\n\n    *   [Solar Panels](https://a1solarstore.com/solar-panels.html)\n\n        *   [All Solar Panels](https://a1solarstore.com/solar-panels.html)\n            *   [Clearance](https://a1solarstore.com/clearance-solar-panels.html)\n            *   [Wholesale](https://a1solarstore.com/wholesale-solar-panels.html)\n            *   [Commercial](https://a1solarstore.com/commercial-solar-panels.html)\n\nWattage\n\n        *   [355 watt](https://a1solarstore.com/solar-panels/355-watt-solar-panels.html)\n        *   [360 watt](https://a1solarstore.com/solar-panels/360-watt-solar-panels.html)\n        *   [370 watt](https://a1solarstore.com/solar-panels/370-watt-solar-panels.html)\n        *   [375 watt](https://a1solarstore.com/solar-panels/375-watt-solar-panels.html)\n        *   [385 watt](https://a1solarstore.com/solar-panels/385-watt-solar-panels.html)\n        *   [400 watt](https://a1solarstore.com/solar-panels/400-watt-solar-panels.html)\n        *   [405 watt](https://a1solarstore.com/solar-panels/405-watt-solar-panels.html)\n        *   [410 watt](https://a1solarstore.com/solar-panels/410-watt-solar-panels.html)\n        *   [415 watt](https://a1solarstore.com/solar-panels/415-watt-solar-panels.html)\n        *   [430 watt](https://a1solarstore.com/solar-panels/430-watt-solar-panels.html)\n        *   [435 watt](https://a1solarstore.com/solar-panels/435-watt-solar-panels.html)\n        *   [440 watt](https://a1solarstore.com/solar-panels/440-watt-solar-panels.html)\n        *   [445 watt](https://a1solarstore.com/solar-panels/445-watt-solar-panels.html)\n        *   [450 watt](https://a1solarstore.com/solar-panels/450-watt-solar-panels.html)\n        *   [455 watt](https://a1solarstore.com/solar-panels/455-watt-solar-panels.html)\n        *   [460 watt](https://a1solarstore.com/solar-panels/460-watt-solar-panels.html)\n        *   [500 watt](https://a1solarstore.com/solar-panels/500-watt-solar-panels.html)\n        *   [540 watt](https://a1solarstore.com/solar-panels/540-watt-solar-panels.html)\n        *   [545 watt](https://a1solarstore.com/solar-panels/545-watt-solar-panels.html)\n        *   [550 watt](https://a1solarstore.com/solar-panels/550-watt-solar-panels.html)\n        *   [560 watt](htt"
+        },
+        "callProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0T4WseQ8x3+Lb/ay0DOLvHbS4jznfn44wKdFcStXuRdGR+MaWy4zYaoeTCTbxSXUJbFUPhwHLEFsfF8Lv4/Pm8sL/+ZKgfIH/uhMIb2Cp0waD6c3fDnwGWbIc="
+          }
+        },
+        "resultProviderMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0T4WseQ8x3+Lb/ay0DOLvHbS4jznfn44wKdFcStXuRdGR+MaWy4zYaoeTCTbxSXUJbFUPhwHLEFsfF8Lv4/Pm8sL/+ZKgfIH/uhMIb2Cp0waD6c3fDnwGWbIc="
+          }
+        }
+      },
+      {
+        "type": "tool-read",
+        "toolCallId": "call_2198133739293607853",
+        "state": "output-available",
+        "input": {
+          "id": 2
+        },
+        "output": {
+          "id": 2,
+          "title": "Heat pumps in subzero temperatures - GreenBuildingAdvisor",
+          "url": "https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps",
+          "chars": 22481,
+          "content": "Title: Heat pumps in subzero temperatures - GreenBuildingAdvisor\n\nURL Source: https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps\n\nMarkdown Content:\n[Skip to content](https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps#main-landmark)\n\n[Green Building Advisor](https://www.greenbuildingadvisor.com/)\n\n[](https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps#)\n\n*   [Blogs](https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps#)\n    *   [Musings of an Energy Nerd](https://www.greenbuildingadvisor.com/blog/musings)\n    *   [Product Guide](https://www.greenbuildingadvisor.com/blog/product-guide)\n    *   [Q&A Spotlight](https://www.greenbuildingadvisor.com/blog/qa-spotlight)\n    *   [Building Science](https://www.greenbuildingadvisor.com/blog/building-science)\n    *   [Green Building News](https://www.greenbuildingadvisor.com/blog/green-building-news)\n    *   [BS* + Beer](https://www.greenbuildingadvisor.com/blog/bs-and-beer)\n    *   [Energy-Smart Details](https://www.greenbuildingadvisor.com/blog/energy-smart-details)\n    *   [Building Matters](https://www.greenbuildingadvisor.com/blog/building-matters)\n    *   [Expert Exchange](https://www.greenbuildingadvisor.com/expert-exchange)\n    *   [View All Blogs](https://www.greenbuildingadvisor.com/blogs)\n\n*   [Green Basics](https://www.greenbuildingadvisor.com/green-basics)\n*   [Detail Library](https://www.greenbuildingadvisor.com/detail-library)\n*   [Q&A](https://www.greenbuildingadvisor.com/qa)\n*   [Green Homes](https://www.greenbuildingadvisor.com/green-homes)\n*   [Videos](https://www.greenbuildingadvisor.com/videos)\n*   [GBA Prime](https://www.greenbuildingadvisor.com/join)\n*   [More](https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps#)\n\n[Log In](https://www.greenbuildingadvisor.com/?auth_login=1&return_to=%2Fquestion%2Fheat-pumps-in-subzero-temps)\n\n[Log In](https://www.greenbuildingadvisor.com/?auth_login=1&return_to=%2Fquestion%2Fheat-pumps-in-subzero-temps)\n\n[](https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps#)\n\nThe complete source for building, designing, and remodeling green homes\n\n[Try for Free](https://subscribe.greenbuildingadvisor.com/GBAPM_trial&pk=W20140FS?returnURL=https%3A%2F%2Fwww.greenbuildingadvisor.com%2Fquestion%2Fheat-pumps-in-subzero-temps&ref=gba-hero)\n\n# Community and Q&A\n\n# Heat pumps in subzero temperatures\n\n[user-3813901](https://www.greenbuildingadvisor.com/profile/user-3813901) | Posted in [General Questions](https://www.greenbuildingadvisor.com/qa/general-questions) on  January 12, 2019 11:04am \n\nHi There Fellow Tradespeople,\n\nWhen outdoor temperatures drop below -18 to -20 degrees F, and my cold climate heat pump is running inefficiently and not producing much heat, should I turn it off, or let it cruise through until temperatures rebound to within it’s range?  \n (Assuming of course that I’d be using my back-up heat source during an event like this.) Martin? Dana? Wanna weigh-in on this one?\n\nThanks All!\n\n*   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.greenbuildingadvisor.com%2Fquestion%2Fheat-pumps-in-subzero-temps)\n*   [](https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.greenbuildingadvisor.com%2Fquestion%2Fheat-pumps-in-subzero-temps&text=Heat%20pumps%20in%20subzero%20temperatures%20-%20GreenBuildingAdvisor)\n*   [](http://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.greenbuildingadvisor.com%2Fquestion%2Fheat-pumps-in-subzero-temps&description=Heat%20pumps%20in%20subzero%20temperatures%20-%20GreenBuildingAdvisor&media=undefined)\n*   [](mailto:?subject=Heat%20pumps%20in%20subzero%20temperatures%20-%20GreenBuildingAdvisor&body=https%3A%2F%2Fwww.greenbuildingadvisor.com%2Fquestion%2Fheat-pumps-in-subzero-temps)\n*   [](https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps#0)[Log in](https://www.greenbuildingadvisor.com/?auth_login=1&return_to=%2Fquestion%2Fheat-pumps-in-subzero-temps) or [Sign up](https://www.greenbuildingadvisor.com/?auth_login=1&return_to=%2Fquestion%2Fheat-pumps-in-subzero-temps) to save your favorite articles\n\n### [GBA Detail Library A collection of one thousand construction details organized by climate and house part Search and download construction details ](https://www.greenbuildingadvisor.com/detail-library?ref=qa-promo)\n\n## Join the leading community of building science experts\n\n### Become a GBA Prime member and get instant access to the latest developments in green building, research, and reports from the field.\n\n[Start free trial](https://subscribe.greenbuildingadvisor.com/GBAPM_trial&pk=W20140FS?returnURL=https%3A%2F%2Fwww.greenbuildingadvisor.com%2Fquestion%2Fheat-pumps-in-subzero-temps&ref=gba-right-rail)\n\n### Related Questions\n\n*   ## [Heat pumps and smart thermostats](https://www.greenbuildingadvisor.com/question/heat-pumps-and-smart-thermostats) \n*   ## [Heat Pumps in Teen Temperatures](https://www.greenbuildingadvisor.com/question/19-f-tonight-whos-runnin-their-heat-pumps) \n*   ## [Efficiency of Air Source Heat Pumps at Cold Temperatures](https://www.greenbuildingadvisor.com/question/efficiency-of-air-source-heat-pumps-at-cold-temperatures) \n*   ## [Heat pumps and vaulted ceilings...](https://www.greenbuildingadvisor.com/question/heat-pumps-and-vaulted-ceilings) \n\n### Replies\n\n1.    Expert Member  [Dana Dorsett](https://www.greenbuildingadvisor.com/author/danadorsett)|Jan 12, 2019 11:30am|[#1](https://www.greenbuildingadvisor.com/question/heat-pumps-in-subzero-temps#comment-143596)What is your alternative source of heat? It matters! If your back up heat is resistance electricity the heat pump will still be beating it on marginal cost. If your backup heat is a wood stove, maybe not.\n\nMost cold climate heat pumps are still delivering a COP greater than 1.5 at max speed at -25C/-13F, and though not explicitly tested & rated at -20F are almost certainly still better than 1.5 @ -20C.\n\nIf your heat pumps a"
+        }
+      },
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "# How do heat pumps perform in very cold climates?\n\n**Answer:** Modern cold-climate air-source heat pumps perform reliably and efficiently even in subzero temperatures, maintaining strong heating capacity down to -15°F (-26°C) or lower [1][6]. While their energy efficiency (COP) and maximum heating output decrease as outdoor temperatures plunge, they routinely outperform traditional electric resistance heating and provide effective warmth with the help of advanced inverter compressors [2][3][6].\n\n## Technological Advancements in Cold-Climate Heat Pumps\n\nTraditional heat pumps suffered from severe capacity drops when outdoor temperatures fell below freezing. However, next-generation cold-climate heat pumps (CCHPs) have transformed winter heating through several engineering breakthroughs:\n* **Advanced Inverter Compressors:** Instead of cycling entirely on and off, inverter-driven compressors modulate their speeds dynamically to continuously extract thermal energy from frigid air [3].\n* **Enhanced Vapor Injection (EVI):** Many modern CCHPs utilize specialized refrigerant injection techniques that boost mass flow rate and compressor capability in subzero conditions, preventing dramatic capacity loss.\n* **Smart Defrost Controls:** Modern units cycle into defrost mode only when frost buildup actually impedes airflow across the outdoor coil rather than running on a rigid timer, maintaining higher overall seasonal efficiency [4].\n\n## Efficiency and Heating Capacity in Subzero Weather\n\nEven when operating in extreme cold, high-performance heat pumps maintain a Coefficient of Performance (COP) above 1.5 at temperatures as low as -13°F (-25°C), meaning they produce at least 1.5 units of heat for every unit of electricity consumed [2]. \n* According to the U.S. Department of Energy’s Cold Climate Heat Pump Challenge, top-tier units maintain over 70% of their rated heating capacity at -15°F while delivering a COP between 2.0 and 3.5 (200% to 350% efficiency) [6].\n* As temperatures approach extreme lows, run times increase to maintain steady indoor comfort [5]. \n* Backup or auxiliary heating (such as existing gas furnaces, zoned ductless resistance, or central electric strips) may automatically engage during deep freeze events to supplement total heating load [5].\n\n## Economic and Real-World Viability\n\nField studies conducted by agencies like the Department of Energy, the National Renewable Energy Laboratory (NREL), and regional efficiency groups confirm that heat pumps yield meaningful energy and cost savings across northern climates [8]. Although upfront equipment and installation costs can be higher than conventional fossil-fuel furnaces, federal tax credits, state rebates, and high long-term operational efficiencies make them increasingly viable alternatives throughout cold regions [8].\n\n## What's uncertain\n\n* **True performance limits below -20°F:** While manufacturer specifications and laboratory ratings cover operation down to -15°F or -22°F, verified real-world performance data during prolonged, multi-day deep freezes below -20°F remains limited.\n* **Optimal backup integration:** There is ongoing debate among building scientists regarding the exact balance point at which switching entirely to a fossil-fuel or electric resistance backup is more cost-effective than letting a heat pump struggle at maximum modulation.\n* **Grid resilience and peak load:** As entire neighborhoods transition to heat pumps in extremely cold regions, the impact on local electrical grid capacity during peak winter demand spikes remains an evolving challenge for utilities.",
+        "providerMetadata": {
+          "google": {
+            "thoughtSignature": "EmAKXgFpFH0T9PyL/fVgjo76oYTjla2h40kdoICkAZA/uH36MeiUZ+AuZ91SX3oHBOG8INUMWQ0xS3TDjhQohhhBFXc4QkaAbH5WWzg5Mu02KAjppAcETFP+5a4qwhtZ860="
+          }
+        },
+        "state": "done"
+      }
+    ]
+  }
+}

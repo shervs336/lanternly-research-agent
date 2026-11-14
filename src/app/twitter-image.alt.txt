@@ -1,0 +1,1 @@
+Lanternly: an AI agent log of plans, searches and pages read beside a cited research report on lantern-lit paper.
