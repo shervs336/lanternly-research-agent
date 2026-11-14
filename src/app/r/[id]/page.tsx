@@ -1,5 +1,9 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
+
+// Reports are user content shared by link: keep them out of search engines.
+export const metadata: Metadata = { robots: { index: false, follow: false } };
 import Link from "next/link";
 import { getReport } from "@/lib/reports";
 import { RunView } from "@/components/run-view";
