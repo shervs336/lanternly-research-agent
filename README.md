@@ -14,9 +14,9 @@ Ask a question and watch an AI agent work: it plans the research, runs web searc
 |---|---|
 | ![Home](docs/screenshots/desktop/01-home.png) | ![Agent log filling in while the report writes](docs/screenshots/desktop/03-agent-running.png) |
 
-| Finished report | Sign in |
-|---|---|
-| ![Report with citations and sources](docs/screenshots/desktop/04-report.png) | ![Email sign-in](docs/screenshots/desktop/07-sign-in.png) |
+| Finished report | Deep mode: parallel researchers | Sign in |
+|---|---|---|
+| ![Report with citations and sources](docs/screenshots/desktop/04-report.png) | ![Deep mode with two researchers reporting back](docs/screenshots/desktop/09-deep-mode-report.png) | ![Email sign-in](docs/screenshots/desktop/07-sign-in.png) |
 
 | Mobile home | Mobile, agent running | Mobile report |
 |---|---|---|
@@ -41,6 +41,10 @@ The whole run streams to the browser with the Vercel AI SDK (`streamText` + `toU
 
 ## Features
 - Live agent log: plan, searches (with result domains), pages read (with size), writing
+- **Deep mode (multi-agent):**
+  - A lead agent plans, then sends 2–3 researcher sub-agents to investigate separate sub-questions in parallel.
+  - Each researcher searches and reads on its own and returns compact, cited findings. The lead writes the report from those findings instead of every page they read, which keeps its context small.
+  - The researchers share the run's numbered source list, so citations stay consistent, and their progress streams into the log live.
 - Report on "lantern-lit paper" with clickable numbered citations and a source list showing what was read in full, cited, or found but not used
 - Shareable report links (`/r/…`), Markdown export, and Save as PDF (print styles)
 - Email sign-in (magic link, no password) and a "My reports" library

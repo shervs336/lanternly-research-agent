@@ -1,15 +1,17 @@
 import { createUIMessageStreamResponse, isStepCount, streamText, toUIMessageStream } from "ai";
 import { google } from "@ai-sdk/google";
 import { createResearchTools } from "@/lib/agent/tools";
-import { systemPrompt } from "@/lib/agent/prompt";
+import { deepSystemPrompt, systemPrompt } from "@/lib/agent/prompt";
 import { checkAndRecordRun, hashIp } from "@/lib/limits";
 import { createAdminClient, currentUserId } from "@/lib/supabase/server";
 import type { ResearchMessage } from "@/lib/types";
 
-export const maxDuration = 60;
+// Deep mode runs researchers in parallel but takes longer overall.
+export const maxDuration = 120;
 
 const MODEL = process.env.GEMINI_MODEL || "gemini-3.5-flash-lite";
 const MAX_STEPS = 12;
+const DEEP_STEPS = 7;
 
 const json = (status: number, error: string) => Response.json({ error }, { status });
 
@@ -28,8 +30,11 @@ export async function POST(req: Request) {
   }
 
   let messages: ResearchMessage[];
+  let deep = false;
   try {
-    ({ messages } = (await req.json()) as { messages: ResearchMessage[] });
+    const body = (await req.json()) as { messages: ResearchMessage[]; deep?: unknown };
+    messages = body.messages;
+    deep = body.deep === true;
   } catch {
     return json(400, "Invalid request.");
   }
@@ -46,21 +51,25 @@ export async function POST(req: Request) {
   if (!limit.ok) return json(429, limit.message);
 
   const reportId = crypto.randomUUID();
-  const tools = createResearchTools(req.signal);
+  const tools = createResearchTools(req.signal, MODEL);
+  const steps = deep ? DEEP_STEPS : MAX_STEPS;
+  const baseTools = deep ? (["plan", "investigate", "search", "read"] as const) : (["plan", "search", "read"] as const);
   const today = new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
   const result = streamText({
     model: google(MODEL),
-    system: systemPrompt(today),
+    system: deep ? deepSystemPrompt(today) : systemPrompt(today),
     prompt: question,
     tools,
     temperature: 0.3,
-    stopWhen: isStepCount(MAX_STEPS),
+    stopWhen: isStepCount(steps),
+    activeTools: [...baseTools],
     abortSignal: req.signal,
     prepareStep: ({ stepNumber }) => {
       if (stepNumber === 0) return { toolChoice: { type: "tool", toolName: "plan" } };
+      if (deep && stepNumber === 1) return { toolChoice: { type: "tool", toolName: "investigate" } };
       // Leave the last steps for writing: no more tools.
-      if (stepNumber >= MAX_STEPS - 3) return { activeTools: [] };
+      if (stepNumber >= steps - (deep ? 2 : 3)) return { activeTools: [] };
       return {};
     },
   });
@@ -68,7 +77,7 @@ export async function POST(req: Request) {
   return createUIMessageStreamResponse({
     stream: toUIMessageStream({
       stream: result.stream,
-      messageMetadata: ({ part }) => (part.type === "start" ? { reportId, model: MODEL } : undefined),
+      messageMetadata: ({ part }) => (part.type === "start" ? { reportId, model: MODEL, deep } : undefined),
       onError: (error) => {
         console.error("[research]", error);
         const text = String((error as Error)?.message ?? error);
@@ -90,7 +99,7 @@ export async function POST(req: Request) {
           id: reportId,
           user_id: userId,
           question,
-          message: { ...responseMessage, metadata: { reportId, model: MODEL } },
+          message: { ...responseMessage, metadata: { reportId, model: MODEL, deep } },
           model: MODEL,
         });
         if (error) console.error("[research] save", error.message);

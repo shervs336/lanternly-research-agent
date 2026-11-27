@@ -28,6 +28,7 @@ function readableError(err: Error | undefined) {
 
 export function ResearchApp({ liveEnabled }: { liveEnabled: boolean }) {
   const [input, setInput] = useState("");
+  const [deep, setDeep] = useState(false);
   const [question, setQuestion] = useState<string | null>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const { messages, sendMessage, status, error, stop, setMessages } = useChat<ResearchMessage>({
@@ -43,7 +44,7 @@ export function ResearchApp({ liveEnabled }: { liveEnabled: boolean }) {
     if (text.length < 8 || running) return;
     setQuestion(text);
     setMessages([]);
-    void sendMessage({ text });
+    void sendMessage({ text }, { body: { deep } });
     setInput("");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -135,7 +136,11 @@ export function ResearchApp({ liveEnabled }: { liveEnabled: boolean }) {
                 className="block w-full resize-none bg-transparent px-3 py-2 text-base text-text outline-none placeholder:text-muted/70 disabled:cursor-not-allowed"
               />
               <div className="flex items-center justify-between px-2 pb-1">
-                <span className="font-mono text-[11px] text-muted">{input.length}/300 · Enter to run</span>
+                <label className="flex items-center gap-2 text-[12px] text-muted" title="A lead agent sends 2-3 researchers to work in parallel, then writes the report from their findings">
+                  <input type="checkbox" checked={deep} onChange={(e) => setDeep(e.target.checked)} disabled={!liveEnabled} className="accent-[var(--color-flame)]" />
+                  Deep mode <span className="hidden font-mono text-[11px] sm:inline">· parallel researchers</span>
+                </label>
+                <span className="hidden font-mono text-[11px] text-muted sm:inline">{input.length}/300 · Enter to run</span>
                 <button
                   type="submit"
                   disabled={!liveEnabled || input.trim().length < 8}

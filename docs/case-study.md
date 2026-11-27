@@ -65,4 +65,17 @@ One honest caveat: the free Flash-Lite model occasionally attributes a figure to
 
 - **Claim checking:** a second pass where the agent verifies each cited claim against the page text and flags weak citations.
 - **Follow-up questions** on a finished report, reusing its sources.
-- **Deep mode:** parallel sub-agents for each plan step, merged into one report.
+
+## Added later: deep mode (multi-agent)
+
+Deep mode turns the single agent into a small team:
+- A lead agent makes the plan and calls an `investigate` tool with 2–3 sub-questions.
+- That tool runs one researcher sub-agent per sub-question, in parallel. Each has its own search and read tools and a budget of a few steps.
+- Each researcher returns bullet-point findings with source numbers. The lead writes the report from those findings.
+
+Decisions:
+- **Shared source numbering.** The researchers use the same per-run source registry, so a source found by one keeps the same number in the final report.
+- **Context isolation.** The lead sees compact findings, not every page the researchers read, which keeps its prompt small even with more sources.
+- **Live progress.** The `investigate` tool is an async generator: it yields each researcher's searches and reads as they happen, and the agent log shows them updating.
+
+![Deep mode report](screenshots/desktop/09-deep-mode-report.png)
