@@ -6,7 +6,13 @@ export type Step =
   | { kind: "plan"; key: string; state: "running" | "done" | "error"; steps: string[] }
   | { kind: "search"; key: string; state: "running" | "done" | "error"; query: string; count: number; domains: string[] }
   | { kind: "read"; key: string; state: "running" | "done" | "error"; id: number; title: string; domain: string; chars?: number }
-  | { kind: "write"; key: string; state: "running" | "done" };
+  | { kind: "write"; key: string; state: "running" | "done" }
+  | {
+      kind: "investigate";
+      key: string;
+      state: "running" | "done" | "error";
+      agents: { question: string; state: "running" | "done" | "error"; searches: number; reads: number[]; sources: number }[];
+    };
 
 export const domainOf = (url: string) => {
   try {
@@ -77,6 +83,23 @@ export function deriveRun(message: ResearchMessage | undefined, finished: boolea
         query: part.input?.query ?? "",
         count: results.length,
         domains: Array.from(new Set(results.map((r) => domainOf(r.url)))).slice(0, 4),
+      });
+    } else if (part.type === "tool-investigate") {
+      // Streams preliminary outputs while the researchers work; the last one is final.
+      const out = part.state === "output-available" ? part.output : undefined;
+      const agents = out?.agents ?? (part.input?.questions ?? []).filter(Boolean).map((q) => ({ question: q as string, state: "running" as const, searches: [], reads: [], sources: [], findings: "" }));
+      for (const a of agents) {
+        for (const s of a.sources) {
+          if (!sources.has(s.id)) sources.set(s.id, { id: s.id, title: s.title, url: s.url, domain: domainOf(s.url), read: false, cited: cited.has(s.id) });
+        }
+      }
+      for (const a of agents) for (const id of a.reads) { const src = sources.get(id); if (src) src.read = true; }
+      const preliminary = (part as { preliminary?: boolean }).preliminary === true || (out ? !out.done : false);
+      steps.push({
+        kind: "investigate",
+        key: part.toolCallId,
+        state: part.state === "output-available" && !preliminary ? "done" : stateOf(part.state) === "error" ? "error" : "running",
+        agents: agents.map((a) => ({ question: a.question, state: a.state, searches: a.searches.length, reads: a.reads, sources: a.sources.length })),
       });
     } else if (part.type === "tool-read") {
       const id = part.input?.id ?? 0;

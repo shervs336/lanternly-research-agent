@@ -1,7 +1,7 @@
-import { AlertTriangleIcon, BookOpenIcon, CheckIcon, ListChecksIcon, PenLineIcon, SearchIcon } from "lucide-react";
+import { AlertTriangleIcon, BookOpenIcon, CheckIcon, ListChecksIcon, NetworkIcon, PenLineIcon, SearchIcon } from "lucide-react";
 import type { Step } from "@/lib/derive";
 
-const ICONS = { plan: ListChecksIcon, search: SearchIcon, read: BookOpenIcon, write: PenLineIcon };
+const ICONS = { plan: ListChecksIcon, search: SearchIcon, read: BookOpenIcon, write: PenLineIcon, investigate: NetworkIcon };
 
 function Status({ state }: { state: Step["state"] }) {
   if (state === "running")
@@ -57,6 +57,30 @@ function Label({ step }: { step: Step }) {
           {step.chars != null && (
             <p className="mt-0.5 font-mono text-[12px] text-muted/80">{step.chars.toLocaleString("en-US")} characters</p>
           )}
+        </>
+      );
+    case "investigate":
+      return (
+        <>
+          <p className="text-text">
+            {step.state === "running" ? `${step.agents.length} researchers are working in parallel…` : `${step.agents.length} researchers reported back`}
+          </p>
+          <ul className="mt-2 space-y-2">
+            {step.agents.map((a, i) => (
+              <li key={i} className="rounded-lg border border-line bg-night-3/60 px-3 py-2">
+                <div className="flex items-start gap-2">
+                  <span className="mt-0.5">
+                    <Status state={a.state} />
+                  </span>
+                  <span className="text-[13px] text-text">{a.question}</span>
+                </div>
+                <p className="mt-1 pl-5.5 font-mono text-[11.5px] text-muted">
+                  {a.searches} {a.searches === 1 ? "search" : "searches"} · {a.sources} sources
+                  {a.reads.length > 0 && <> · read {a.reads.map((id) => `[${id}]`).join("")}</>}
+                </p>
+              </li>
+            ))}
+          </ul>
         </>
       );
     case "write":

@@ -49,7 +49,7 @@ export function RunView({ question, message, phase, shareId, createdAt }: Props)
           <div className="flex items-center justify-between px-3 pt-2 pb-1">
             <p className="text-[11px] font-semibold tracking-[0.18em] text-muted uppercase">Agent log</p>
             <p className="font-mono text-[11px] text-muted">
-              {sources.length} sources · {steps.filter((s) => s.kind === "read" && s.state === "done").length} read
+              {sources.length} sources · {sources.filter((s) => s.read).length} read
             </p>
           </div>
           <Timeline steps={steps} waiting={!finished} />
